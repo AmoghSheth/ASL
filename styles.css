@@ -463,33 +463,58 @@ body::before {
 
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border-radius: var(--border-radius);
-    width: 80%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh;
     position: relative;
     text-align: center;
     box-shadow: var(--card-shadow);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .close-button {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 10px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
     color: var(--secondary-color);
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close-button:hover {
     color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #modalLetterImage {
     max-width: 100%;
+    max-height: 70vh;
+    width: auto;
     height: auto;
+    object-fit: contain;
     margin: 20px 0;
 }
 
@@ -497,4 +522,9 @@ body::before {
     color: var(--secondary-color);
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px 0;
+    width: 100%;
 }
