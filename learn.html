@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - LearnASL.ai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">LearnASL.ai</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="learn.html" class="active">Learn</a>
+            </div>
+        </nav>
+        
+        <main class="main-content">
+            <div class="learning-section">
+                <div class="letter-selection">
+                    <h2>Choose letter:</h2>
+                    <div class="letter-grid">
+                    </div>
+                </div>
+                
+                <div id="letterModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2 id="modalLetterTitle">Letter</h2>
+                        <img id="modalLetterImage" src="" alt="">
+                    </div>
+                </div>
+                
+                <div class="camera-section">
+                    <div class="camera-container">
+                        <video id="camera-feed" autoplay playsinline></video>
+                        <div class="feedback-overlay">
+                            <span class="correct-badge">Correct! ✓</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
