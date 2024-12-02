@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnASL.ai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">LearnASL.ai</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="learn.html">Learn</a>
+            </div>
+        </nav>
+        
+        <main class="main-content">
+            <!-- Home Page -->
+            <div class="page home-page active">
+                <div class="hero-section">
+                    <h1>Learn American Sign Language with AI</h1>
+                    <p>Master ASL through interactive lessons and real-time feedback</p>
+                    <button onclick="startLearning()" class="cta-button">Start Learning</button>
+                </div>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI-Powered</h3>
+                        <p>Real-time sign detection and feedback</p>
+                    </div>      
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Complete Course</h3>
+                        <p>Learn all 26 letters of the ASL alphabet</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Practice Mode</h3>
+                        <p>Perfect your signs with instant feedback</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learn Page -->
+            <div class="page learn-page">
+                <div class="learning-section">
+                    <div class="letter-selection">
+                        <h2>Choose letter:</h2>
+                        <div class="letter-grid">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="camera-section">
+                        <div class="camera-container">
+                            <video id="camera-feed" autoplay playsinline></video>
+                            <div class="feedback-overlay">
+                                <span class="correct-badge">Correct! ✓</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        function startLearning() {
+           
+            window.location.href = 'learn.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
